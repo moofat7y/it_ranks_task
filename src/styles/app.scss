@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Almarai", sans-serif !important;
+}
+
+@font-face {
+  font-family: "cocon";
+  src: url("public/fonts/cocon-next-arabic.ttf");
+}
+
+body {
+  background-position: center;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #ffffff !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    &.swiper-pagination-bullet-active {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+#news_dialog {
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #c0b9b9;
+  }
+}
+
+.line-clamp {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
